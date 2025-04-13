@@ -32,10 +32,10 @@ export default function Home() {
         setLoading(true);
         setError(null);
         const url = loc
-          ? `http://localhost:5000/api/jobs?location=${encodeURIComponent(
+          ? `${process.env.NEXT_PUBLIC_API_URL}/api/jobs?location=${encodeURIComponent(
               loc
             )}&offset=${newOffset}&limit=${limit}`
-          : `http://localhost:5000/api/jobs?offset=${newOffset}&limit=${limit}`;
+          : `${process.env.NEXT_PUBLIC_API_URL}/api/jobs?offset=${newOffset}&limit=${limit}`;
         const response = await axios.get(url);
         const { jobs: newJobs, totalJobs: total } = response.data;
 
