@@ -48,7 +48,7 @@ Users can also filter jobs by location through a search bar.
 
 ## 🚀 Deployment Links
 
-- 🔗 **Frontend Live**: [Vercel Link Here]
+- 🔗 **Frontend Live**: https://job-listings-hazel.vercel.app
 - 🔗 **Backend Live**: https://job-listings-2d10.onrender.com
 
 ---
