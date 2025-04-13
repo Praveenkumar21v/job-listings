@@ -17,7 +17,8 @@ app.use(morgan('combined'));
 
 app.use(compression());
 
-app.use(cors());
+app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI)
