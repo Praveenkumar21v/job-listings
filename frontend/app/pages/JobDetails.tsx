@@ -30,7 +30,7 @@ export default function JobDetails({ job, onClose }: JobDetailsProps) {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 50 }}
       transition={{ duration: 0.3 }}
-      className="w-full h-full md:h-[calc(100vh-2rem)] md:sticky md:top-4" 
+      className="w-full h-full md:h-[calc(100vh-2rem)] md:sticky md:top-4"
     >
       <Card className="h-full overflow-y-auto border-l-4 border-purple-600">
         <CardContent className="p-4 md:p-6 relative">
@@ -38,7 +38,7 @@ export default function JobDetails({ job, onClose }: JobDetailsProps) {
             <>
               <Button
                 variant="ghost"
-                className="mb-4 flex items-center gap-2 md:hidden" 
+                className="mb-4 flex items-center gap-2 md:hidden"
                 onClick={onClose}
               >
                 <ArrowLeft className="h-5 w-5" />
@@ -48,7 +48,7 @@ export default function JobDetails({ job, onClose }: JobDetailsProps) {
               <Button
                 variant="ghost"
                 size="icon"
-                className="absolute top-4 right-4 hidden md:block"
+                className="absolute top-4 right-4 hidden md:flex items-center justify-center rounded-full hover:bg-gray-200 transition cursor-pointer"
                 onClick={onClose}
               >
                 <X className="h-5 w-5" />

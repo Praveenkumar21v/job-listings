@@ -173,8 +173,8 @@ export default function Home() {
               }`}
             >
               <SearchBar onSearch={handleSearch} />
-              <div className="overflow-y-auto max-h-[calc(100vh-8rem)]">
-                {jobs.map((job, index) => (
+              <div className="overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
+              {jobs.map((job, index) => (
                   <div key={index}>
                     <JobCard
                       job={job}
